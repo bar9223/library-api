@@ -1,0 +1,11 @@
+/vendor/
+/var/
+/.env.local
+/.env.*.local
+/public/bundles/
+/composer.phar
+.phpunit.result.cache
+.phpunit.cache/
+/.idea/
+/.vscode/
+.DS_Store

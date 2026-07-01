@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}System biblioteczny{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div id="app"></div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="{{ asset('assets/js/app.js') }}"></script>
+{% endblock %}

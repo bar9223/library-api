@@ -1,0 +1,21 @@
+framework:
+    secret: '%env(APP_SECRET)%'
+    http_method_override: false
+    handle_all_throwables: true
+    php_errors:
+        log: true
+    property_info:
+        enabled: true
+    serializer:
+        enable_attributes: true
+    validation:
+        enable_attributes: true
+    messenger:
+        default_bus: command.bus
+        buses:
+            command.bus:
+                middleware:
+                    - validation
+            query.bus:
+                middleware:
+                    - validation
